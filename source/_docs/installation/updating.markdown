@@ -17,7 +17,7 @@ The upgrade process differs depending on the installation you have, so please re
 The default way to update Home Assistant to the latest release, when available, is:
 
 ```bash
-$ pip3 install --upgrade homeassistant
+$ sudo pip3 install --upgrade homeassistant
 ```
 
 After updating, you must restart Home Assistant for the changes to take effect. This means that you will have to restart `hass` itself or the [autostarting](/docs/autostart/) daemon (if applicable). Startup can take considerable amount of time (i.e. minutes) depending on your device. This is because all requirements are updated as well.
@@ -33,7 +33,7 @@ To avoid permission errors, the upgrade must be run as the same user as the inst
 In the event that a Home Assistant version doesn't play well with your hardware setup, you can downgrade to a previous release:
 
 ```bash
-$ pip3 install homeassistant==0.XX.X
+$ sudo pip3 install homeassistant==0.XX.X
 ```
 
 #### {% linkable_title Run the development version %}
@@ -45,5 +45,5 @@ If you want to stay on the bleeding-edge Home Assistant development branch, you 
 </p>
 
 ```bash
-$ pip3 install --upgrade git+git://github.com/home-assistant/home-assistant.git@dev
+$ sudo pip3 install --upgrade git+git://github.com/home-assistant/home-assistant.git@dev
 ```
